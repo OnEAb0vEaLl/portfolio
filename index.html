@@ -11,13 +11,51 @@
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
         }
-        /* Custom style to center text and icon in the link */
+      
         .icon-link {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            width: 80px; /* Give a fixed width to keep spacing consistent */
+            width: 80px; 
+            position: relative; 
+        }
+
+     
+        .email-link .tooltip-text {
+            visibility: hidden;
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; 
+            left: 50%;
+            margin-left: -100px; 
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        .email-link:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+       
+        .email-link .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
         }
     </style>
 </head>
@@ -59,18 +97,18 @@
             <a 
                 href="mailto:sudarshangirix789@gmail.com" 
                 aria-label="Email Address"
-                class="icon-link text-gray-400 hover:text-red-500 transition duration-300 transform hover:scale-105"
+                class="icon-link email-link text-gray-400 hover:text-red-500 transition duration-300 transform hover:scale-105"
             >
                 <i class="fa-solid fa-envelope fa-3x mb-1"></i>
                 <p class="text-xs font-medium">Email</p>
+                <span class="tooltip-text">sudarshangirix789@gmail.com</span>
             </a>
 
             <a 
                 href="https://drive.google.com/file/d/1Gly_7IIF4myRElm4bp1mIvZ7iQm6RG_6/view?usp=drive_link" 
-                target="_blank" 
                 aria-label="Download CV"
                 class="icon-link text-gray-400 hover:text-red-500 transition duration-300 transform hover:scale-105"
-                download
+                download="Sudarshan_Giri_CV.pdf"
             >
                 <i class="fa-solid fa-file-lines fa-3x mb-1"></i>
                 <p class="text-xs font-medium">Download CV</p>
@@ -79,5 +117,4 @@
     </div>
 
 </body>
-
 </html>
