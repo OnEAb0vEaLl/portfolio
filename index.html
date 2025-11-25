@@ -11,17 +11,17 @@
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
         }
-      
+        /* Custom style to center text and icon in the link */
         .icon-link {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            width: 80px; 
-            position: relative; 
+            width: 80px; /* Give a fixed width to keep spacing consistent */
+            position: relative; /* Needed for tooltip positioning */
         }
 
-     
+        /* Pure CSS Tooltip for Email */
         .email-link .tooltip-text {
             visibility: hidden;
             width: 200px;
@@ -32,9 +32,9 @@
             padding: 5px 0;
             position: absolute;
             z-index: 1;
-            bottom: 125%; 
+            bottom: 125%; /* Position above the icon */
             left: 50%;
-            margin-left: -100px; 
+            margin-left: -100px; /* Center the tooltip */
             opacity: 0;
             transition: opacity 0.3s;
             font-size: 0.8rem;
@@ -46,7 +46,7 @@
             opacity: 1;
         }
 
-       
+        /* Tooltip Arrow */
         .email-link .tooltip-text::after {
             content: "";
             position: absolute;
@@ -113,6 +113,13 @@
                 <i class="fa-solid fa-file-lines fa-3x mb-1"></i>
                 <p class="text-xs font-medium">Download CV</p>
             </a>
+			<a 
+			href="https://github.com/OnEAb0vEaLl" 
+			target="_blank" aria-label="GitHub Profile" class="icon-link text-gray-400 hover:text-red-500 transition duration-300 transform hover:scale-105"
+			>
+			<i class="fa-brands fa-github fa-3x mb-1"></i>
+			<p class="text-xs font-medium">GitHub</p>
+			</a>
         </div>
     </div>
 
