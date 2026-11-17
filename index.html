@@ -4,581 +4,523 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sudarshan Giri — Software Developer</title>
-<meta name="description" content="Sudarshan Giri — Aspiring Software Developer building secure full-stack web applications with ASP.NET MVC, Django and Python.">
+<meta name="description" content="Sudarshan Giri — software engineering, cybersecurity and data engineering portfolio.">
+<meta name="theme-color" content="#F7F3C8" id="tc">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#F7F3C8;
-    --bg-alt:#FFFDF3;
-    --ink:#191A3D;
-    --ink-soft:#54577D;
-    --ink-faint:#8B8DAE;
-    --accent:#F3E36A;
-    --accent-2:#FF8B66;
-    --mint:#B7E3C7;
-    --line:#E4DFAF;
-    --display:'Space Grotesk', system-ui, sans-serif;
-    --sans:'Inter', system-ui, sans-serif;
+:root,[data-theme="software"]{
+  --bg:#F7F3C8; --card:#FFFDF3; --ink:#191A3D; --soft:#54577D; --line:#E4DFAF;
+  --a1:#F3E36A; --a2:#FF8B66; --a3:#B7E3C7; --on-a1:#191A3D; --link:#C2410C;
+  --bd:2px solid #191A3D; --r:16px; --sh:6px 6px 0 var(--line); --sh-btn:6px 6px 0 #191A3D;
+  --disp:'Space Grotesk',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+  --bgimg:none; --head:rgba(247,243,200,.9);
+}
+[data-theme="cyber"]{
+  --bg:#0C1015; --card:#131A22; --ink:#E6EDF3; --soft:#9AA8B8; --line:#243140;
+  --a1:#FF4D6D; --a2:#4FD1C5; --a3:#F5B83D; --on-a1:#0C1015; --link:#4FD1C5;
+  --bd:1px solid #243140; --r:4px; --sh:none; --sh-btn:0 0 22px rgba(255,77,109,.45);
+  --disp:'IBM Plex Mono',ui-monospace,monospace; --body:'IBM Plex Sans',system-ui,sans-serif;
+  --bgimg:repeating-linear-gradient(0deg,rgba(255,255,255,.02) 0 1px,transparent 1px 4px); --head:rgba(12,16,21,.92);
+}
+[data-theme="data"]{
+  --bg:#EDF3F9; --card:#FFFFFF; --ink:#0B2540; --soft:#4A6380; --line:#CBD9E8;
+  --a1:#1F6FEB; --a2:#0FA3A3; --a3:#FFB703; --on-a1:#FFFFFF; --link:#1F6FEB;
+  --bd:1px solid #B7C9DC; --r:8px; --sh:0 2px 0 #CBD9E8; --sh-btn:0 3px 0 #0B2540;
+  --disp:'Sora',system-ui,sans-serif; --body:'DM Sans',system-ui,sans-serif;
+  --bgimg:linear-gradient(#DCE7F2 1px,transparent 1px),linear-gradient(90deg,#DCE7F2 1px,transparent 1px); --head:rgba(237,243,249,.92);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.rv{opacity:1!important;transform:none!important}}
+body{margin:0;background:var(--bg);background-image:var(--bgimg);background-size:40px 40px;color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;transition:background-color .3s,color .3s}
+h1,h2,h3,h4{font-family:var(--disp);margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--a2);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--a1);color:var(--on-a1);padding:8px 14px;border-radius:8px;z-index:100;font-weight:600}
+.skip:focus{left:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+section{padding:72px 0;scroll-margin-top:84px}
+.svg{width:18px;height:18px;fill:currentColor}
+.ic,.si{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 
-    --c-dotnet:#512BD4;
-    --c-python:#2F6DA6;
-    --c-django:#0C4B33;
-    --c-js:#F0DB4F;
-    --c-html:#E34F26;
-    --c-css:#2965F1;
-    --c-mongo:#3FA037;
-    --c-sql:#2C5F8A;
-    --c-redis:#D82C20;
-    --c-git:#F1502F;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
-  }
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font-family:var(--sans); -webkit-font-smoothing:antialiased;
-  }
-  a{color:inherit;}
-  img{max-width:100%;}
-  .wrap{max-width:1120px; margin:0 auto; padding:0 32px;}
-  @media (max-width:640px){ .wrap{padding:0 20px;} }
-  h1,h2,h3{font-family:var(--display); margin:0;}
-  section{scroll-margin-top:86px;}
-  .kicker{
-    font-family:var(--sans); font-weight:600; font-size:.78rem; letter-spacing:.14em;
-    text-transform:uppercase; color:var(--accent-2); margin-bottom:14px; display:block;
-  }
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--head);backdrop-filter:blur(10px);padding:10px 0;border-bottom:1px solid var(--line)}
+.prog{position:absolute;left:0;bottom:-1px;height:3px;width:100%;background:var(--a2);transform-origin:left;transform:scaleX(0)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font:700 1.1rem var(--disp);text-decoration:none;white-space:nowrap}
+.tabs{display:flex;gap:6px;padding:5px;background:var(--card);border:var(--bd);border-radius:calc(var(--r) + 6px)}
+.tabs a{position:relative;width:50px;height:42px;display:grid;place-items:center;color:var(--soft);border-radius:var(--r);transition:background .2s,color .2s,transform .2s}
+.tabs a:hover{color:var(--ink);transform:translateY(-2px)}
+.tabs .ic{width:23px;height:23px}
+.tabs a[aria-current="page"]{background:var(--a1);color:var(--on-a1)}
+.tabs a::after{content:attr(data-label);position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(-4px);background:var(--ink);color:var(--bg);font:600 .72rem var(--body);padding:5px 9px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:.15s}
+.tabs a:hover::after,.tabs a:focus-visible::after{opacity:1;transform:translateX(-50%)}
+.links{display:flex;gap:4px}
+.links a{font-size:.88rem;font-weight:600;color:var(--soft);text-decoration:none;padding:8px 12px;border-radius:calc(var(--r)/2);transition:.2s}
+.links a:hover,.links a.on{color:var(--ink);background:var(--card)}
+.social{display:flex;gap:4px}
+.social a{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;transition:background .2s,color .2s}
+.social a:hover{background:var(--a1);color:var(--on-a1)}
+@media (max-width:1000px){.links{display:none}}
+@media (max-width:640px){.brand{display:none}.bar{justify-content:space-between}.wrap{padding:0 20px}section{padding:56px 0}}
 
-  /* ---------- tech badges ---------- */
-  .tech-badge{
-    display:inline-flex; align-items:center; justify-content:center;
-    min-width:32px; height:24px; padding:0 7px; border-radius:7px;
-    font-family:var(--display); font-weight:700; font-size:.62rem; letter-spacing:.02em;
-    color:#fff; flex-shrink:0;
-  }
-  .tech-badge.icon-only{width:26px; min-width:26px; height:26px; border-radius:50%; padding:0;}
-  .tech-badge svg{width:14px; height:14px;}
-  .tech-badge img{width:13px; height:13px; display:block; flex-shrink:0;}
-  .tech-badge.icon-only img{width:14px; height:14px;}
-  .tech-badge.has-icon{gap:5px; padding:0 8px;}
-  .b-dotnet{background:var(--c-dotnet);}
-  .b-python{background:var(--c-python);}
-  .b-django{background:var(--c-django);}
-  .b-js{background:var(--c-js); color:var(--ink);}
-  .b-html{background:var(--c-html);}
-  .b-css{background:var(--c-css);}
-  .b-mongo{background:var(--c-mongo);}
-  .b-sql{background:var(--c-sql);}
-  .b-redis{background:var(--c-redis);}
-  .b-git{background:var(--c-git);}
-  .b-lock{background:var(--ink);}
-  .b-shield{background:var(--accent-2);}
+#view{animation:in .4s ease}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
 
-  /* ---------- nav ---------- */
-  header.top{
-    position:sticky; top:0; z-index:60; padding:22px 0;
-    background:rgba(247,243,200,.86); backdrop-filter:blur(10px);
-    border-bottom:1px solid transparent;
-  }
-  .topbar{display:flex; align-items:center; justify-content:space-between;}
-  .brand{font-family:var(--display); font-weight:700; font-size:1.15rem; text-decoration:none;}
-  nav.links{display:flex; gap:38px;}
-  nav.links a{text-decoration:none; color:var(--ink); font-weight:500; font-size:.95rem; padding:4px 0; border-bottom:2px solid transparent; transition:border-color .2s, color .2s;}
-  nav.links a:hover{border-color:var(--ink);}
-  nav.links a:focus-visible{outline:2px solid var(--ink); outline-offset:4px;}
-  .social{display:flex; gap:16px; align-items:center;}
-  .social a{width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--ink); transition:background .2s, color .2s, transform .2s;}
-  .social a:hover{background:var(--ink); color:var(--bg); transform:translateY(-2px);}
-  .social svg{width:16px; height:16px;}
-  @media (max-width:800px){ nav.links{display:none;} }
+/* shared */
+.hero{padding:60px 0 76px}
+.hero-grid{display:grid;gap:48px;align-items:center}
+.hello{color:var(--soft);font-size:1.12rem;margin:0 0 8px}
+h1{line-height:1.06;letter-spacing:-.015em;margin-bottom:18px}
+.sub{color:var(--soft);font-size:1.06rem;line-height:1.65;max-width:480px;margin:0 0 24px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.badge{font:700 .72rem var(--disp);padding:5px 10px;border:var(--bd);border-radius:calc(var(--r)/2);background:var(--card)}
+.badge i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;background:var(--a2)}
+.cta{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--a1);color:var(--on-a1);font-weight:600;padding:13px 24px;border-radius:var(--r);border:2px solid var(--a1);text-decoration:none;box-shadow:var(--sh-btn);transition:transform .15s,box-shadow .15s}
+[data-theme="software"] .btn{border-color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(2px);box-shadow:none}
+.btn svg{width:18px;height:18px}
+.ghost{font-weight:600;text-decoration:none;border-bottom:2px solid var(--a2);padding:12px 2px;transition:.2s}
+.ghost:hover{color:var(--link)}
+.av{position:relative;width:min(300px,76vw);aspect-ratio:1;margin:0 auto}
+.av-c{position:relative;width:100%;height:100%;border-radius:50%;background:#191A3D;display:grid;place-items:center;overflow:hidden;border:var(--bd)}
+.av-c b{font:700 4.4rem var(--disp);color:var(--a1)}
+.av-c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.head{display:flex;align-items:center;gap:14px;margin-bottom:36px}
+.hi{width:46px;height:46px;display:grid;place-items:center;background:var(--a1);color:var(--on-a1);border-radius:var(--r);flex-shrink:0}
+.hi .si{width:24px;height:24px}
+.head h2{font-size:clamp(1.7rem,3.2vw,2.4rem);letter-spacing:-.01em}
+.card{background:var(--card);border:var(--bd);border-radius:var(--r);box-shadow:var(--sh)}
+.lead{font:700 clamp(1.25rem,2.4vw,1.6rem)/1.35 var(--disp);margin:0 0 16px}
+.about p:not(.lead){line-height:1.75;color:var(--soft);margin:0 0 16px}
+.facts div{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.facts div:last-child{border:0}
+.facts span:first-child{color:var(--soft)}
+.facts span:last-child{font-weight:600;text-align:right}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:980px){.grid3{grid-template-columns:1fr}}
+h3{font-size:1.2rem;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+.tag{font:600 .72rem var(--body);padding:4px 10px;border:1px solid var(--line);border-radius:20px;color:var(--soft)}
+.tag.draft{border-style:dashed;color:var(--a3)}
+.pts{list-style:none;margin:0 0 16px;padding:0}
+.pts li{position:relative;padding-left:18px;margin-bottom:9px;font-size:.92rem;line-height:1.55;color:var(--soft)}
+.pts li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--a2)}
+.repo{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:.88rem;text-decoration:none;color:var(--link)}
+.repo::after{content:"→";transition:transform .2s}
+.repo:hover::after{transform:translateX(4px)}
+.edu{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.edu h3{margin-bottom:6px}.edu p{margin:0;color:var(--soft)}
+.edu b{color:var(--link)}
 
-  /* ---------- hero ---------- */
-  .hero{padding:56px 0 110px;}
-  .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:40px; align-items:center;}
-  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr; gap:90px;} }
+/* software */
+[data-theme="software"] .hero-grid{grid-template-columns:1.1fr .9fr}
+[data-theme="software"] h1{font-size:clamp(2.5rem,5.6vw,4.2rem);font-weight:700}
+[data-theme="software"] .av::before{content:"";position:absolute;inset:-16px;border:2px dashed var(--a2);border-radius:50%;opacity:.7;animation:spin 50s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+[data-theme="software"] .av-c{border-color:var(--ink)}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:start}
+[data-theme="software"] .proj{display:flex;flex-direction:column;border-top:6px solid var(--a1);transition:transform .2s,box-shadow .2s}
+[data-theme="software"] .proj:hover{transform:translateY(-6px);box-shadow:10px 10px 0 var(--line)}
+[data-theme="software"] .proj:nth-child(2){border-top-color:var(--a2)}
+[data-theme="software"] .proj:nth-child(3){border-top-color:var(--a3)}
+[data-theme="software"] .pts{flex-grow:1}
+[data-theme="software"] .repo{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line)}
+.skill h4{font-size:1.02rem;margin-bottom:16px}
+.skill div{display:flex;flex-direction:column;gap:10px}
+.skill span{display:flex;align-items:center;gap:10px;font-size:.92rem;font-weight:500}
+.skill span::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--a2);flex-shrink:0}
+@media (max-width:860px){[data-theme="software"] .hero-grid{grid-template-columns:1fr;text-align:center}[data-theme="software"] .sub{margin-inline:auto}[data-theme="software"] .badges,[data-theme="software"] .cta{justify-content:center}[data-theme="software"] .av{order:-1;width:min(220px,60vw)}}
 
-  .hello{font-size:1.2rem; color:var(--ink-soft); margin:0 0 6px;}
-  .headline{font-weight:700; font-size:clamp(2.6rem,6vw,4.4rem); line-height:1.04; letter-spacing:-.01em; margin:6px 0 22px;}
-  .headline .accent-word{position:relative; display:inline-block;}
-  .headline .accent-word::after{
-    content:""; position:absolute; left:-4px; right:-4px; bottom:6px; height:.32em;
-    background:var(--accent); z-index:-1; border-radius:2px;
-  }
-  .sub{font-size:1.1rem; color:var(--ink-soft); max-width:440px; line-height:1.6; margin:0 0 30px;}
+/* cyber */
+[data-theme="cyber"] .hero-grid{grid-template-columns:1.6fr .4fr;align-items:start}
+[data-theme="cyber"] .av{width:min(220px,60vw)}
+[data-theme="cyber"] .av-c{border-radius:8px;background:#0A0D11;border-color:var(--a1);box-shadow:0 0 36px rgba(255,77,109,.25)}
+.term{border:var(--bd);border-radius:8px;background:#0A0E13;overflow:hidden;box-shadow:0 24px 60px -28px rgba(255,77,109,.45)}
+.tbar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#10161D;border-bottom:var(--bd);font:500 .78rem var(--disp);color:var(--soft)}
+.tbar i{width:10px;height:10px;border-radius:50%;background:#2B3846}
+.tbar i:first-child{background:var(--a1)}
+.tbar span{margin-left:8px}
+.tbody{padding:28px}
+.tbody>p{margin:0 0 10px;font:500 .9rem var(--disp);color:var(--soft)}
+.tbody>p b{color:var(--a2);margin-right:10px}
+.tbody>p.sub{font:400 1.02rem/1.65 var(--body);padding-left:22px;margin-bottom:20px}
+.tbody h1{font-size:clamp(1.9rem,4.2vw,3.1rem);font-weight:600;color:var(--ink);padding-left:22px}
+.tbody h1::after{content:"";display:inline-block;width:.5em;height:.08em;margin-left:.2em;background:var(--a1);animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.tbody .badges,.tbody .cta{padding-left:22px}
+[data-theme="cyber"] .badge{background:transparent;color:var(--a2);border-color:#1E3B3A}
+.spec{display:grid;grid-template-columns:repeat(5,1fr);border:var(--bd);border-radius:4px;background:var(--card);margin-top:28px}
+.spec div{padding:16px 18px;border-right:1px solid var(--line)}
+.spec div:last-child{border:0}
+.spec small{display:block;font:500 .72rem var(--disp);color:var(--a2);margin-bottom:6px}
+.spec b{font-size:.9rem;font-weight:600;line-height:1.4}
+@media (max-width:900px){[data-theme="cyber"] .hero-grid{grid-template-columns:1fr}.spec{grid-template-columns:1fr 1fr}.spec div{border-bottom:1px solid var(--line)}}
+.row{display:grid;grid-template-columns:260px 1fr;gap:30px;padding:24px;margin-bottom:18px;border:var(--bd);border-left:3px solid var(--a1);border-radius:4px;background:var(--card);transition:border-color .2s,box-shadow .2s}
+.row:hover{box-shadow:0 0 24px -8px rgba(79,209,197,.35);border-color:#34506b}
+.row:nth-child(2){border-left-color:var(--a2)}.row:nth-child(3){border-left-color:var(--a3)}
+@media (max-width:800px){.row{grid-template-columns:1fr;gap:6px}}
+.mrow{display:grid;grid-template-columns:230px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);align-items:center}
+.mrow h4{font-size:.95rem;color:var(--a2)}
+.mrow div{display:flex;flex-wrap:wrap;gap:8px}
+.mrow span{font:500 .82rem var(--disp);padding:7px 12px;border:var(--bd);border-radius:3px;background:var(--card);transition:.2s}
+.mrow span:hover{border-color:var(--a2);color:var(--a2)}
+@media (max-width:700px){.mrow{grid-template-columns:1fr;gap:10px}}
+[data-theme="cyber"] .edu{border-left:3px solid var(--a1)}
 
-  .stack-strip{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:34px;}
+/* data */
+[data-theme="data"] .hero-grid{grid-template-columns:1fr 380px}
+[data-theme="data"] h1{font-size:clamp(2.3rem,5vw,3.7rem);font-weight:700}
+@media (max-width:900px){[data-theme="data"] .hero-grid{grid-template-columns:1fr}}
+[data-theme="data"] .av{width:112px;margin:0 0 22px}
+[data-theme="data"] .av-c{background:#0B2540;border-color:var(--a1)}
+[data-theme="data"] .av-c b{font-size:2.2rem;color:#fff}
+.flow{position:relative}
+.stage{position:relative;display:flex;gap:16px;padding:0 0 26px 0}
+.stage:last-child{padding-bottom:0}
+.stage::before{content:"";position:absolute;left:15px;top:34px;bottom:0;width:2px;background:repeating-linear-gradient(var(--a1) 0 5px,transparent 5px 9px)}
+.stage:last-child::before{display:none}
+.stage .dot{width:32px;height:32px;border-radius:8px;background:var(--a1);color:#fff;display:grid;place-items:center;flex-shrink:0}
+.stage:nth-child(3) .dot{background:var(--a2)}
+.stage:nth-child(4) .dot{background:#0B2540}
+.stage .dot .si{width:17px;height:17px}
+.stage b{display:block;font:600 .98rem var(--disp)}
+.stage small{color:var(--soft);font-size:.86rem}
+[data-theme="data"] .about{grid-template-columns:.8fr 1.2fr}
+[data-theme="data"] .about .lead{border-left:4px solid var(--a1);padding-left:18px}
+[data-theme="data"] .facts div:nth-child(odd){background:#F6F9FC}
+.lineage{position:relative;padding-left:46px}
+.lineage::before{content:"";position:absolute;left:11px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--a1),var(--a2))}
+.node{position:relative;margin-bottom:22px;border-left:4px solid var(--a1);transition:transform .2s}
+.node:hover{transform:translateX(4px)}
+.node::before{content:"";position:absolute;left:-46px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--card);border:3px solid var(--a1)}
+.node:nth-child(2){border-left-color:var(--a2)}.node:nth-child(2)::before{border-color:var(--a2)}
+.node:nth-child(3){border-left-color:var(--a3)}.node:nth-child(3)::before{border-color:var(--a3)}
+.tbl{border:var(--bd);border-radius:var(--r);background:var(--card);overflow:hidden;box-shadow:var(--sh)}
+.tbl h4{padding:13px 18px;background:#0B2540;color:#fff;font-size:.92rem}
+.tbl span{display:block;padding:11px 18px;border-top:1px solid var(--line);font-size:.92rem}
+.tbl span:nth-child(odd){background:#F6F9FC}
 
-  .cta-row{display:flex; gap:18px; flex-wrap:wrap; align-items:center;}
-  .btn-primary{
-    position:relative; display:inline-flex; align-items:center; gap:8px;
-    background:var(--accent); border:2px solid var(--ink); color:var(--ink);
-    font-family:var(--sans); font-weight:600; font-size:.95rem;
-    padding:14px 26px; border-radius:12px; text-decoration:none;
-    box-shadow:6px 6px 0 var(--ink);
-    transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .btn-primary:hover{transform:translate(-3px,-3px); box-shadow:9px 9px 0 var(--ink);}
-  .btn-primary:active{transform:translate(0,0); box-shadow:2px 2px 0 var(--ink);}
-  .btn-ghost{
-    display:inline-flex; align-items:center; gap:8px; text-decoration:none;
-    color:var(--ink); font-weight:600; font-size:.95rem; padding:14px 6px;
-    border-bottom:2px solid var(--ink);
-  }
-  .btn-ghost:hover{color:var(--accent-2); border-color:var(--accent-2);}
-  .btn-ghost svg{width:14px; height:14px; transition:transform .2s;}
-  .btn-ghost:hover svg{transform:translateX(3px);}
+/* footer + top button */
+footer{background:#14152F;color:#FFFDF3;padding:80px 0 36px;border-radius:36px 36px 0 0;margin-top:16px}
+[data-theme="cyber"] footer{background:#06080B;border-top:1px solid var(--a1);border-radius:0}
+[data-theme="data"] footer{background:#0B2540;border-radius:0}
+footer h2{font-size:clamp(1.8rem,4vw,2.9rem);max-width:640px;line-height:1.12}
+.crow{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;flex-wrap:wrap;margin-top:30px}
+.mail{font:600 clamp(1.1rem,2.4vw,1.5rem) var(--disp);color:var(--a1);text-decoration:none;word-break:break-all}
+[data-theme="data"] .mail{color:#7FB5FF}
+.mail:hover{color:var(--a2)}
+.fsoc{display:flex;gap:12px}
+.fsoc a{width:44px;height:44px;border:2px solid #3B3D66;border-radius:50%;display:grid;place-items:center;transition:background .2s,color .2s}
+.fsoc a:hover{background:var(--a1);border-color:var(--a1);color:var(--on-a1)}
+.fb{margin-top:60px;padding-top:24px;border-top:1px solid #33355C;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.85rem;color:#B0B2CE}
+#up{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;border:var(--bd);background:var(--a1);color:var(--on-a1);display:grid;place-items:center;cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s;z-index:40}
+#up.show{opacity:1;transform:none;pointer-events:auto}
+#up svg{width:20px;height:20px}
+@media (max-width:800px){.about,[data-theme="data"] .about{grid-template-columns:1fr}.lineage{padding-left:30px}.node::before{left:-30px}.lineage::before{left:5px}}
 
-  /* ---------- avatar ---------- */
-  .avatar-col{display:flex; justify-content:center; position:relative;}
-  .avatar-wrap{position:relative; width:min(320px,80vw); aspect-ratio:1/1;}
-  .ring{
-    position:absolute; inset:-16px; border:2px dashed var(--ink); border-radius:50%;
-    opacity:.4; animation:spin 44s linear infinite;
-  }
-  @keyframes spin{ to{ transform:rotate(360deg); } }
-  .avatar-circle{
-    position:relative; width:100%; height:100%; border-radius:50%;
-    background:radial-gradient(circle at 32% 28%, #34365F 0%, #21223F 55%, #191A3D 100%);
-    display:flex; align-items:center; justify-content:center;
-    box-shadow:0 26px 46px -16px rgba(25,26,61,.45);
-  }
-  .avatar-mono{font-family:var(--display); font-weight:700; font-size:5rem; color:var(--accent); letter-spacing:-.02em;}
-  .avatar-photo{
-    position:absolute; inset:0; width:100%; height:100%; border-radius:50%;
-    object-fit:cover; object-position:center top;
-  }
-  .avatar-tag{
-    position:absolute; bottom:12%; left:50%; transform:translateX(-50%);
-    background:var(--accent-2); color:var(--bg-alt); font-family:var(--sans); font-weight:700;
-    font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; padding:6px 14px; border-radius:20px;
-    border:2px solid var(--ink); white-space:nowrap;
-  }
-  .float-badge{
-    position:absolute; display:flex; align-items:center; gap:7px;
-    background:var(--bg-alt); border:2px solid var(--ink); border-radius:14px;
-    padding:8px 12px; box-shadow:4px 4px 0 var(--line);
-    font-family:var(--display); font-weight:700; font-size:.78rem;
-    animation:float 5s ease-in-out infinite;
-  }
-  .float-badge span.tech-badge{width:20px; height:20px; min-width:20px; border-radius:6px; font-size:.5rem;}
-  .fb-1{top:-4%; left:-14%; animation-delay:0s;}
-  .fb-2{top:38%; right:-16%; animation-delay:1.4s;}
-  .fb-3{bottom:-2%; left:-10%; animation-delay:2.6s;}
-  @keyframes float{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-9px);} }
-  @media (max-width:900px){ .avatar-wrap{margin-top:20px;} .float-badge{font-size:.72rem; padding:7px 10px;} }
-  @media (max-width:460px){ .fb-1{left:-4%;} .fb-3{left:-2%;} .fb-2{right:-4%;} }
+/* tech icons */
+.tic{display:inline-grid;place-items:center;flex-shrink:0;width:22px;height:22px;padding:3px;border-radius:6px;background:#fff;border:1px solid rgba(0,0,0,.1);color:#1F2A44;vertical-align:middle}
+.tic img,.tic svg{width:100%;height:100%;object-fit:contain;display:block}
+.tic svg{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tag .tic,.badge .tic{width:18px;height:18px;padding:2px;border-radius:5px}
+.tag{display:inline-flex;align-items:center;gap:6px}
+.badge{display:inline-flex;align-items:center;gap:7px}
+.skill span::before{display:none}
+.mrow span{display:inline-flex;align-items:center;gap:8px}
+.tbl span{display:flex;align-items:center;gap:10px}
 
-  /* ---------- generic section ---------- */
-  section{padding:90px 0;}
-  .section-head{max-width:560px; margin-bottom:52px;}
-  .section-head h2{font-size:clamp(1.9rem,3.6vw,2.6rem); font-weight:700; letter-spacing:-.01em;}
-
-  /* ---------- profile ---------- */
-  .profile-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:50px; align-items:start;}
-  @media (max-width:800px){ .profile-grid{grid-template-columns:1fr;} }
-  .profile-copy{position:relative;}
-  .quote-mark{
-    position:absolute; top:-58px; left:-16px; font-family:var(--display); font-weight:700;
-    font-size:8.5rem; line-height:1; color:var(--accent); opacity:.55; z-index:-1; user-select:none;
-  }
-  @media (max-width:800px){ .quote-mark{font-size:6rem; top:-38px; left:-6px;} }
-  .profile-copy .lead{
-    font-family:var(--display); font-weight:700; font-size:clamp(1.35rem,2.6vw,1.7rem);
-    line-height:1.35; letter-spacing:-.01em; margin:0 0 18px; color:var(--ink);
-  }
-  .profile-grid p{font-size:1.08rem; line-height:1.75; color:var(--ink); margin:0 0 18px;}
-  .profile-grid p:last-of-type{margin-bottom:0;}
-  .highlight{position:relative; display:inline; font-weight:700; white-space:normal;}
-  .highlight::after{
-    content:""; position:absolute; left:-3px; right:-3px; bottom:1px; height:.3em;
-    background:var(--mint); z-index:-1; border-radius:2px;
-  }
-  .profile-highlights{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px;}
-  .highlight-pill{
-    display:flex; align-items:center; gap:11px; flex:1 1 190px;
-    background:var(--bg-alt); border:2px solid var(--ink); border-radius:14px;
-    padding:12px 14px; font-weight:700; font-size:.86rem; color:var(--ink);
-    box-shadow:4px 4px 0 var(--line); transition:transform .15s ease, box-shadow .15s ease;
-  }
-  .highlight-pill:hover{transform:translate(-2px,-2px); box-shadow:6px 6px 0 var(--line);}
-  .highlight-pill:nth-child(1){box-shadow:4px 4px 0 var(--mint);}
-  .highlight-pill:nth-child(1):hover{box-shadow:6px 6px 0 var(--mint);}
-  .highlight-pill:nth-child(2){box-shadow:4px 4px 0 var(--accent);}
-  .highlight-pill:nth-child(2):hover{box-shadow:6px 6px 0 var(--accent);}
-  .highlight-pill:nth-child(3){box-shadow:4px 4px 0 var(--accent-2);}
-  .highlight-pill:nth-child(3):hover{box-shadow:6px 6px 0 var(--accent-2);}
-  .hp-icon{
-    width:34px; height:34px; min-width:34px; border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .hp-icon svg{width:17px; height:17px;}
-  .fact-card{background:var(--bg-alt); border:2px solid var(--ink); border-radius:16px; padding:26px 28px; box-shadow:6px 6px 0 var(--accent-2); position:relative;}
-  .fact-card div{display:flex; justify-content:space-between; gap:14px; padding:11px 0; border-bottom:1px solid var(--line); font-size:.9rem;}
-  .fact-card div:last-child{border-bottom:none;}
-  .fact-card span:first-child{color:var(--ink-faint); font-weight:600; display:flex; align-items:center;}
-  .fact-card span:first-child::before{
-    content:""; display:inline-block; width:7px; height:7px; border-radius:50%;
-    background:var(--accent-2); margin-right:9px; flex-shrink:0;
-  }
-  .fact-card span:last-child{font-weight:600; text-align:right;}
-
-  /* ---------- projects ---------- */
-  .project-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
-  @media (max-width:980px){ .project-grid{grid-template-columns:1fr;} }
-  .card{
-    position:relative; overflow:hidden;
-    background:var(--bg-alt); border:2px solid var(--ink); border-radius:18px;
-    padding:32px 26px 28px; display:flex; flex-direction:column; height:100%;
-    transition:transform .2s ease, box-shadow .2s ease; box-shadow:6px 6px 0 var(--line);
-  }
-  .card::before{content:""; position:absolute; top:0; left:0; right:0; height:6px;}
-  .card.c1::before{background:var(--c-dotnet);}
-  .card.c2::before{background:var(--c-django);}
-  .card.c3::before{background:var(--c-redis);}
-  .card:hover{transform:translateY(-4px); box-shadow:8px 10px 0 var(--accent-2);}
-  .card h3{font-size:1.22rem; font-weight:700; margin-bottom:12px;}
-  .tag-row{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px;}
-  .tag{
-    display:inline-flex; align-items:center; gap:6px;
-    font-size:.74rem; font-weight:600; color:var(--ink); background:var(--bg);
-    border:1.5px solid var(--ink); padding:4px 10px 4px 4px; border-radius:20px;
-  }
-  .tag .tech-badge{height:19px; min-width:24px; border-radius:5px; font-size:.55rem; padding:0 5px;}
-  .card ul{margin:0 0 20px; padding:0; list-style:none; flex-grow:1;}
-  .card li{position:relative; padding-left:18px; margin-bottom:9px; font-size:.92rem; line-height:1.55; color:var(--ink-soft);}
-  .card li::before{content:"•"; position:absolute; left:0; color:var(--accent-2); font-weight:700;}
-  .repo-link{
-    margin-top:auto; display:inline-flex; align-items:center; gap:7px; text-decoration:none;
-    font-weight:700; font-size:.88rem; color:var(--ink); padding-top:16px; border-top:1px dashed var(--line);
-  }
-  .repo-link svg{width:16px; height:16px; transition:transform .2s;}
-  .repo-link:hover{color:var(--accent-2);}
-  .repo-link:hover svg{transform:translateX(3px);}
-
-  /* ---------- skills ---------- */
-  .skills-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
-  @media (max-width:800px){ .skills-grid{grid-template-columns:1fr;} }
-  .skill-card{background:var(--bg-alt); border:2px solid var(--ink); border-radius:18px; padding:26px 24px; box-shadow:6px 6px 0 var(--line);}
-  .skill-card h4{font-family:var(--display); font-size:1.02rem; font-weight:700; margin-bottom:18px;}
-  .chip-list{display:flex; flex-direction:column; gap:10px;}
-  .chip{display:inline-flex; align-items:center; gap:11px; font-size:.9rem; font-weight:600;}
-
-  /* ---------- education ---------- */
-  .edu-card{
-    background:var(--bg-alt); border:2px solid var(--ink); border-radius:18px; padding:30px 32px;
-    display:flex; justify-content:space-between; gap:22px; flex-wrap:wrap; box-shadow:6px 6px 0 var(--line);
-  }
-  .edu-card h3{font-size:1.2rem; font-weight:700; margin-bottom:6px;}
-  .edu-card p{margin:0; color:var(--ink-soft);}
-  .edu-when{font-weight:700; color:var(--accent-2); text-align:right; font-size:.95rem;}
-
-  /* ---------- contact / footer ---------- */
-  footer{position:relative; background:var(--ink); color:var(--bg-alt); padding:90px 0 40px; border-radius:40px 40px 0 0; margin-top:20px;}
-  footer .kicker{color:var(--accent);}
-  footer h2{color:var(--bg-alt); font-size:clamp(2rem,4.4vw,3.2rem); font-weight:700; letter-spacing:-.01em; max-width:640px; line-height:1.1;}
-  .contact-row{display:flex; justify-content:space-between; align-items:flex-end; gap:30px; flex-wrap:wrap; margin-top:34px;}
-  .email-big{font-family:var(--display); font-size:clamp(1.3rem,2.6vw,1.7rem); font-weight:600; color:var(--accent); text-decoration:none; word-break:break-all;}
-  .email-big:hover{color:var(--accent-2);}
-  .social-foot{display:flex; gap:14px;}
-  .social-foot a{
-    width:46px; height:46px; border-radius:50%; border:2px solid #3B3D66; display:flex;
-    align-items:center; justify-content:center; color:var(--bg-alt); transition:background .2s, border-color .2s, transform .2s;
-  }
-  .social-foot a:hover{background:var(--accent); border-color:var(--accent); color:var(--ink); transform:translateY(-3px);}
-  .social-foot svg{width:19px; height:19px;}
-  .foot-bottom{
-    margin-top:70px; padding-top:26px; border-top:1px solid #33355C;
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-    font-size:.85rem; color:#8B8DAE;
-  }
-  .foot-bottom a{color:#8B8DAE; text-decoration:none;}
-  .foot-bottom a:hover{color:var(--accent);}
-
-  /* back to top */
-  .totop{
-    position:fixed; right:26px; bottom:26px; z-index:70;
-    width:46px; height:46px; border-radius:50%; background:var(--ink); color:var(--accent);
-    border:2px solid var(--ink); display:flex; align-items:center; justify-content:center;
-    text-decoration:none; box-shadow:4px 4px 0 var(--accent-2);
-    transition:transform .15s ease;
-  }
-  .totop:hover{transform:translateY(-3px);}
-  .totop svg{width:18px; height:18px;}
+/* adaptability */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img,svg{max-width:100%}
+.card{--pad:26px;padding:var(--pad)}
+[data-theme="data"] .facts div:nth-child(odd){margin:0 calc(var(--pad) * -1);padding:11px var(--pad)}
+.facts div{flex-wrap:wrap}
+.hero-grid>*,.about>*{min-width:0}
+h1,.lead,.mail{overflow-wrap:anywhere}
+header.top{padding-top:max(10px,env(safe-area-inset-top))}
+.wrap{padding-left:max(28px,env(safe-area-inset-left));padding-right:max(28px,env(safe-area-inset-right))}
+#up{right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom))}
+@media (min-width:1500px){html{font-size:112.5%}.wrap{max-width:1320px}}
+@media (min-width:2200px){html{font-size:125%}.wrap{max-width:1500px}}
+@media (max-width:980px) and (min-width:621px){.grid3{grid-template-columns:repeat(2,1fr)}.grid3>:last-child:nth-child(odd){grid-column:1/-1}}
+@media (max-width:980px){.bar{gap:10px}}
+@media (hover:none){.tabs a::after{display:none}.tabs a:hover,.btn:hover,[data-theme="software"] .proj:hover,.node:hover{transform:none}}
+@media (max-width:640px){.wrap{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}.card{--pad:20px}.hero{padding:36px 0 52px}.head{margin-bottom:26px}footer{padding:56px 0 28px;border-radius:24px 24px 0 0}.fb{margin-top:40px}.tbody{padding:20px 16px}.tbody>p.sub,.tbody h1,.tbody .badges,.tbody .cta{padding-left:0}.btn{width:100%;justify-content:center}.cta{gap:12px}.social a:nth-child(3){display:none}.edu{flex-direction:column;align-items:flex-start;gap:8px}.mrow{padding:16px 0}.row{padding:18px}}
+@media (max-width:480px){.tabs a{width:44px;height:40px}.tabs{padding:4px;gap:4px}.social a{width:34px;height:34px}.spec{grid-template-columns:1fr}.facts div{flex-direction:column;gap:2px}.facts span:last-child{text-align:left}.sub{font-size:1rem}.badges{gap:6px}.mail{font-size:1.05rem}}
+@media (max-width:360px){.social{display:none}.bar{justify-content:center}}
+@media (max-height:480px) and (orientation:landscape){.hero{padding:28px 0 40px}section{padding:44px 0}}
+@media print{header.top,#up,.skip{display:none}.rv{opacity:1!important;transform:none!important}body{background:#fff}}
 </style>
 </head>
-<body>
+<body data-theme="software">
+<a class="skip" href="#view">Skip to content</a>
 
-<header class="top" id="top">
-  <div class="wrap topbar">
-    <a class="brand" href="#top" onclick="event.preventDefault(); window.scrollTo({top:0, behavior:'smooth'});">Sudarshan Giri</a>
-    <nav class="links">
-      <a href="#profile">About</a>
-      <a href="#projects">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="gh" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></symbol>
+  <symbol id="in" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45C23.2 24 24 23.22 24 22.25V1.75C24 .78 23.2 0 22.22 0z"/></symbol>
+  <symbol id="ml" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm.8 2 8.2 6 8.2-6z"/></symbol>
+  <symbol id="i-software" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="i-cyber" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.4 3 7.9 7 9.5 4-1.6 7-5.1 7-9.5V6z"/><rect x="9" y="11" width="6" height="4.5" rx="1"/><path d="M10 11V9.8a2 2 0 0 1 4 0V11"/></symbol>
+  <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="3"/><path d="M5 5.5v6.5c0 1.7 3.1 3 7 3s7-1.3 7-3V5.5M5 12v6.5c0 1.7 3.1 3 7 3s7-1.3 7-3V12"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zM3 13l9 5 9-5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></symbol>
+  <symbol id="i-flow" viewBox="0 0 24 24"><path d="M4 12h6m4 0h6M10 8l4 4-4 4"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11m-5-4 5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#software">Sudarshan Giri</a>
+    <nav class="tabs" aria-label="Choose portfolio">
+      <a href="#software" data-k="software" data-label="Software engineering" aria-label="Software engineering"><svg class="ic" width="23" height="23"><use href="#i-software"/></svg></a>
+      <a href="#cyber" data-k="cyber" data-label="Cybersecurity" aria-label="Cybersecurity"><svg class="ic" width="23" height="23"><use href="#i-cyber"/></svg></a>
+      <a href="#data" data-k="data" data-label="Data engineering" aria-label="Data engineering"><svg class="ic" width="23" height="23"><use href="#i-data"/></svg></a>
     </nav>
+    <nav class="links" id="links" aria-label="Sections"><a href="#about">About</a><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#edu">Education</a></nav>
     <div class="social">
-      <a href="https://www.linkedin.com/in/sudarshan-giri-972b57240/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45C23.2 24 24 23.22 24 22.25V1.75C24 .78 23.2 0 22.22 0z"/></svg>
-      </a>
-      <a href="https://github.com/OnEAb0vEaLl" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
-      </a>
-      <a href="mailto:sudarshangirix789@gmail.com" aria-label="Email">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="m2.5 6 9.5 7 9.5-7"/></svg>
-      </a>
+      <a href="https://www.linkedin.com/in/sudarshan-giri-972b57240/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="svg"><use href="#in"/></svg></a>
+      <a href="https://github.com/OnEAb0vEaLl" target="_blank" rel="noopener" aria-label="GitHub"><svg class="svg"><use href="#gh"/></svg></a>
+      <a href="mailto:sudarshangirix789@gmail.com" aria-label="Email"><svg class="svg"><use href="#ml"/></svg></a>
     </div>
   </div>
+  <div class="prog" id="prog"></div>
 </header>
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="hello">Hello, I'm Sudarshan,</p>
-      <h1 class="headline">Aspiring<br><span class="accent-word">Software</span><br>Developer</h1>
-      <p class="sub">A Computer Systems Engineering student building secure, full-stack web applications — based in Bhaktapur, Nepal.</p>
+<main id="view" tabindex="-1"></main>
 
-      <div class="stack-strip" aria-label="Primary tech stack">
-        <span class="tech-badge has-icon b-dotnet"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z"/></svg>.NET</span>
-        <span class="tech-badge has-icon b-python"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>PY</span>
-        <span class="tech-badge has-icon b-django"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 00-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v9.098c0 3.134-.229 4.638-.917 5.937-.637 1.249-1.478 2.039-3.211 2.905l-3.644-1.733c1.733-.815 2.574-1.53 3.109-2.625.561-1.121.739-2.421.739-5.835V6.059h3.924zM17.39.021h3.924v4.026H17.39z"/></svg>DJ</span>
-        <span class="tech-badge has-icon b-js" style="color:#191A3D;"><svg viewBox="0 0 24 24" fill="#191A3D" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>JS</span>
-        <span class="tech-badge has-icon b-mongo"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg>MDB</span>
-        <span class="tech-badge has-icon b-redis"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M22.71 13.145c-1.66 2.092-3.452 4.483-7.038 4.483-3.203 0-4.397-2.825-4.48-5.12.701 1.484 2.073 2.685 4.214 2.63 4.117-.133 6.94-3.852 6.94-7.239 0-4.05-3.022-6.972-8.268-6.972-3.752 0-8.4 1.428-11.455 3.685C2.59 6.937 3.885 9.958 4.35 9.626c2.648-1.904 4.748-3.13 6.784-3.744C8.12 9.244.886 17.05 0 18.425c.1 1.261 1.66 4.648 2.424 4.648.232 0 .431-.133.664-.365a100.49 100.49 0 0 0 5.54-6.765c.222 3.104 1.748 6.898 6.014 6.898 3.819 0 7.604-2.756 9.33-8.965.2-.764-.73-1.361-1.261-.73zm-4.349-5.013c0 1.959-1.926 2.922-3.685 2.922-.941 0-1.664-.247-2.235-.568 1.051-1.592 2.092-3.225 3.21-4.973 1.972.334 2.71 1.43 2.71 2.619z"/></svg>RDS</span>
-      </div>
-
-      <div class="cta-row">
-        <a class="btn-primary" href="https://drive.google.com/file/d/1L2VRtTgCXiVdJ4ue4k1WG4eR5QfhWgBl/view?usp=sharing" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
-          Resume
-        </a>
-        <a class="btn-ghost" href="#projects">
-          View Projects
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-
-    <div class="avatar-col">
-      <div class="avatar-wrap">
-        <div class="ring"></div>
-        <div class="avatar-circle">
-          <span class="avatar-mono">SG</span>
-          <img class="avatar-photo" src="profile.jpeg" alt="Sudarshan Giri" loading="eager"
-               onerror="this.style.display='none';">
-          <span class="avatar-tag">Code &amp; Security</span>
-        </div>
-        <div class="float-badge fb-1"><span class="tech-badge b-dotnet"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z"/></svg></span>C#</div>
-        <div class="float-badge fb-2"><span class="tech-badge b-python"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span>Django</div>
-        <div class="float-badge fb-3"><span class="tech-badge b-mongo"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg></span>Mongo</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="profile">
+<footer>
   <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">About</span>
-      <h2>A bit about me</h2>
-    </div>
-    <div class="profile-grid">
-      <div class="profile-copy">
-        <span class="quote-mark" aria-hidden="true">“</span>
-        <p class="lead">I build <span class="highlight">secure, full-stack web applications</span> — and I care as much about what's under the hood as what the user sees.</p>
-        <p>Motivated BSc (Hons) Computer Systems Engineering student with hands-on experience designing and building full-stack, secure web applications using ASP.NET MVC (C#), Django and Python, and modern database technologies. Comfortable working across the full software development lifecycle with a strong focus on object-oriented design, MVC architecture and <span class="highlight">application security</span> best practice.</p>
-
-        <div class="profile-highlights">
-          <div class="highlight-pill">
-            <span class="hp-icon" style="background:var(--mint);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#191A3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-            </span>
-            Security-first mindset
-          </div>
-          <div class="highlight-pill">
-            <span class="hp-icon" style="background:var(--accent);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#191A3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/></svg>
-            </span>
-            MVC &amp; OOP architecture
-          </div>
-          <div class="highlight-pill">
-            <span class="hp-icon" style="background:var(--accent-2);">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#191A3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m13 5-2 14"/></svg>
-            </span>
-            Full-stack delivery
-          </div>
-        </div>
-      </div>
-
-      <div class="fact-card">
-        <div><span>Program</span><span>BSc (Hons) Computer Systems Engineering</span></div>
-        <div><span>Institution</span><span>ISMT College, Kathmandu</span></div>
-        <div><span>Focus</span><span>OOP · MVC · App Security</span></div>
-        <div><span>Core Stack</span><span>ASP.NET MVC · Django · Python</span></div>
-        <div><span>Location</span><span>Bhaktapur, Nepal</span></div>
+    <h2 id="fh"></h2>
+    <div class="crow">
+      <a class="mail" href="mailto:sudarshangirix789@gmail.com">sudarshangirix789@gmail.com</a>
+      <div class="fsoc">
+        <a href="https://www.linkedin.com/in/sudarshan-giri-972b57240/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="svg"><use href="#in"/></svg></a>
+        <a href="https://github.com/OnEAb0vEaLl" target="_blank" rel="noopener" aria-label="GitHub"><svg class="svg"><use href="#gh"/></svg></a>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Work</span>
-      <h2>Selected projects</h2>
-    </div>
-    <div class="project-grid">
-
-      <article class="card c1">
-        <h3>Elevate Workforce Solutions</h3>
-        <div class="tag-row">
-          <span class="tag"><span class="tech-badge b-dotnet"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z"/></svg></span>ASP.NET MVC</span>
-          <span class="tag"><span class="tech-badge b-dotnet" style="background:#2B1B5E;">C#</span></span>
-        </div>
-        <ul>
-          <li>Built with ASP.NET MVC (C#) following strict OOP principles and MVC architecture.</li>
-          <li>Authentication for job seekers and companies — register, login, logout.</li>
-          <li>CRUD job listings with pagination and a company dashboard for application tracking.</li>
-          <li>Documented with UML class diagrams.</li>
-        </ul>
-        <!-- 👇 Replace # with your repo URL -->
-        <a class="repo-link" href="https://github.com/OnEAb0vEaLl/Library-Management-Bookstore-System.git" target="_blank" rel="noopener">
-          View Repository
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-        </a>
-      </article>
-
-      <article class="card c2">
-        <h3>AI-Solutions</h3>
-        <div class="tag-row">
-          <span class="tag"><span class="tech-badge b-python"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span>Python</span>
-          <span class="tag"><span class="tech-badge b-django"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 00-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v9.098c0 3.134-.229 4.638-.917 5.937-.637 1.249-1.478 2.039-3.211 2.905l-3.644-1.733c1.733-.815 2.574-1.53 3.109-2.625.561-1.121.739-2.421.739-5.835V6.059h3.924zM17.39.021h3.924v4.026H17.39z"/></svg></span>Django</span>
-          <span class="tag"><span class="tech-badge b-mongo"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg></span>MongoDB</span>
-        </div>
-        <ul>
-          <li>Django / MongoDB site with a CMS, ratings, articles, event gallery, and a validated enquiry form.</li>
-          <li>Password-protected admin panel with CRUD content management and enquiry analytics.</li>
-          <li>Security: bcrypt hashing, CSRF protection, XSS escaping, NoSQL-injection prevention — GDPR-compliant.</li>
-        </ul>
-        <!-- 👇 Replace # with your repo URL -->
-        <a class="repo-link" href="https://github.com/OnEAb0vEaLl/AI-Solutions-Company-Website-Admin-Portal.git" target="_blank" rel="noopener">
-          View Repository
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-        </a>
-      </article>
-
-      <article class="card c3">
-        <h3>SecureTalk</h3>
-        <div class="tag-row">
-          <span class="tag"><span class="tech-badge b-django"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 00-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v9.098c0 3.134-.229 4.638-.917 5.937-.637 1.249-1.478 2.039-3.211 2.905l-3.644-1.733c1.733-.815 2.574-1.53 3.109-2.625.561-1.121.739-2.421.739-5.835V6.059h3.924zM17.39.021h3.924v4.026H17.39z"/></svg></span>Django</span>
-          <span class="tag"><span class="tech-badge b-redis"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M22.71 13.145c-1.66 2.092-3.452 4.483-7.038 4.483-3.203 0-4.397-2.825-4.48-5.12.701 1.484 2.073 2.685 4.214 2.63 4.117-.133 6.94-3.852 6.94-7.239 0-4.05-3.022-6.972-8.268-6.972-3.752 0-8.4 1.428-11.455 3.685C2.59 6.937 3.885 9.958 4.35 9.626c2.648-1.904 4.748-3.13 6.784-3.744C8.12 9.244.886 17.05 0 18.425c.1 1.261 1.66 4.648 2.424 4.648.232 0 .431-.133.664-.365a100.49 100.49 0 0 0 5.54-6.765c.222 3.104 1.748 6.898 6.014 6.898 3.819 0 7.604-2.756 9.33-8.965.2-.764-.73-1.361-1.261-.73zm-4.349-5.013c0 1.959-1.926 2.922-3.685 2.922-.941 0-1.664-.247-2.235-.568 1.051-1.592 2.092-3.225 3.21-4.973 1.972.334 2.71 1.43 2.71 2.619z"/></svg></span>Redis</span>
-          <span class="tag"><span class="tech-badge icon-only b-lock"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>JWT</span>
-        </div>
-        <ul>
-          <li>Real-time chat via Django Channels + Redis WebSockets.</li>
-          <li>Dual-layer password strength scoring with Cloudflare Turnstile CAPTCHA.</li>
-          <li>bcrypt hashing with password-history checks, MFA via TOTP and email OTP.</li>
-          <li>Progressive lockout, timing-attack mitigation, CSP/HSTS headers, and audit logging.</li>
-        </ul>
-        <!-- 👇 Replace # with your repo URL -->
-        <a class="repo-link" href="https://github.com/OnEAb0vEaLl/securetalk.git" target="_blank" rel="noopener">
-          View Repository
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-        </a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Toolkit</span>
-      <h2>Skills &amp; practices</h2>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h4>Languages &amp; Frameworks</h4>
-        <div class="chip-list">
-          <span class="chip"><span class="tech-badge b-dotnet"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z"/></svg></span>ASP.NET MVC (C#)</span>
-          <span class="chip"><span class="tech-badge b-python"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg></span>Python</span>
-          <span class="chip"><span class="tech-badge b-django"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M11.146 0h3.924v18.166c-2.013.382-3.491.535-5.096.535-4.791 0-7.288-2.166-7.288-6.32 0-4.002 2.65-6.6 6.753-6.6.637 0 1.121.05 1.707.203zm0 9.143a3.894 3.894 0 00-1.325-.204c-1.988 0-3.134 1.223-3.134 3.365 0 2.09 1.096 3.236 3.109 3.236.433 0 .79-.025 1.35-.102V9.142zM21.314 6.06v9.098c0 3.134-.229 4.638-.917 5.937-.637 1.249-1.478 2.039-3.211 2.905l-3.644-1.733c1.733-.815 2.574-1.53 3.109-2.625.561-1.121.739-2.421.739-5.835V6.059h3.924zM17.39.021h3.924v4.026H17.39z"/></svg></span>Django</span>
-          <span class="chip"><span class="tech-badge b-js" style="color:#191A3D;"><svg viewBox="0 0 24 24" fill="#191A3D" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg></span>JavaScript</span>
-          <span class="chip"><span class="tech-badge b-html"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg></span>HTML5</span>
-          <span class="chip"><span class="tech-badge b-css"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/></svg></span>CSS3</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h4>Data &amp; Infrastructure</h4>
-        <div class="chip-list">
-          <span class="chip"><span class="tech-badge b-mongo"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg></span>MongoDB</span>
-          <span class="chip"><span class="tech-badge b-sql"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></span>SQL Databases</span>
-          <span class="chip"><span class="tech-badge b-redis"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M22.71 13.145c-1.66 2.092-3.452 4.483-7.038 4.483-3.203 0-4.397-2.825-4.48-5.12.701 1.484 2.073 2.685 4.214 2.63 4.117-.133 6.94-3.852 6.94-7.239 0-4.05-3.022-6.972-8.268-6.972-3.752 0-8.4 1.428-11.455 3.685C2.59 6.937 3.885 9.958 4.35 9.626c2.648-1.904 4.748-3.13 6.784-3.744C8.12 9.244.886 17.05 0 18.425c.1 1.261 1.66 4.648 2.424 4.648.232 0 .431-.133.664-.365a100.49 100.49 0 0 0 5.54-6.765c.222 3.104 1.748 6.898 6.014 6.898 3.819 0 7.604-2.756 9.33-8.965.2-.764-.73-1.361-1.261-.73zm-4.349-5.013c0 1.959-1.926 2.922-3.685 2.922-.941 0-1.664-.247-2.235-.568 1.051-1.592 2.092-3.225 3.21-4.973 1.972.334 2.71 1.43 2.71 2.619z"/></svg></span>Redis</span>
-          <span class="chip"><span class="tech-badge b-git"><svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></svg></span>Git &amp; Version Control</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <h4>Security Practice</h4>
-        <div class="chip-list">
-          <span class="chip"><span class="tech-badge icon-only b-lock"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>bcrypt Hashing</span>
-          <span class="chip"><span class="tech-badge icon-only b-shield"><svg viewBox="0 0 24 24" fill="none" stroke="#191A3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3z"/></svg></span>CSRF / XSS Defense</span>
-          <span class="chip"><span class="tech-badge icon-only b-lock"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 8-8"/><path d="m16 7 3 3"/><path d="m13 10 2 2"/></svg></span>JWT &amp; MFA</span>
-          <span class="chip"><span class="tech-badge icon-only b-shield"><svg viewBox="0 0 24 24" fill="none" stroke="#191A3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3z"/><path d="m9.5 12 1.8 1.8L15 10"/></svg></span>CSP / HSTS Headers</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="education">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Education</span>
-      <h2>Where I'm studying</h2>
-    </div>
-    <div class="edu-card">
-      <div>
-        <h3>BSc (Hons) Computer Systems Engineering (IT)</h3>
-        <p>ISMT College, Kathmandu, Nepal</p>
-      </div>
-      <div class="edu-when">12/2023 — Present</div>
-    </div>
-  </div>
-</section>
-
-<footer id="contact">
-  <div class="wrap">
-    <span class="kicker">Contact</span>
-    <h2>Let's build something secure together.</h2>
-    <div class="contact-row">
-      <a class="email-big" href="mailto:sudarshangirix789@gmail.com">sudarshangirix789@gmail.com</a>
-      <div class="social-foot">
-        <a href="https://www.linkedin.com/in/sudarshan-giri-972b57240/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45C23.2 24 24 23.22 24 22.25V1.75C24 .78 23.2 0 22.22 0z"/></svg>
-        </a>
-        <a href="https://github.com/OnEAb0vEaLl" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
-        </a>
-        <a href="https://drive.google.com/file/d/1L2VRtTgCXiVdJ4ue4k1WG4eR5QfhWgBl/view?usp=sharing" target="_blank" rel="noopener" aria-label="Download CV">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6M9 9h1"/></svg>
-        </a>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© 2026 Sudarshan Giri</span>
-      <span>Balkot, Chardobato, Bhaktapur, Nepal</span>
-    </div>
+    <div class="fb"><span>© 2026 Sudarshan Giri</span><span>Balkot, Chardobato, Bhaktapur, Nepal</span></div>
   </div>
 </footer>
+<button id="up" aria-label="Back to top"><svg class="ic"><use href="#i-up"/></svg></button>
 
-<a class="totop" href="#top" aria-label="Back to top" onclick="event.preventDefault(); window.scrollTo({top:0, behavior:'smooth'});">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
-</a>
+<script>
+/* START: portfolio shown when there is no #hash.
+   LINKS: leave "" to switch in place on this page. Put a URL to send that portfolio to its own page,
+          e.g. { cyber: "https://yoursite.com/cyber/" } — the icon then becomes a normal link to it. */
+const START = "software";
+const LINKS = { software: "", cyber: "", data: "" };
+/* Set to true to also show the "EDIT ME" placeholder projects while you are writing them. */
+const SHOW_DRAFTS = false;
 
+const RESUME = "https://drive.google.com/file/d/1L2VRtTgCXiVdJ4ue4k1WG4eR5QfhWgBl/view?usp=sharing";
+const GH = "https://github.com/OnEAb0vEaLl/";
+const COLORS = { software: "#F7F3C8", cyber: "#0C1015", data: "#EDF3F9" };
+
+const P = {
+  software: {
+    title: "Sudarshan Giri — Software Developer",
+    hello: "Hello, I'm Sudarshan,", h1: "Aspiring Software Developer",
+    sub: "A Computer Systems Engineering student building secure, full-stack web applications — based in Bhaktapur, Nepal.",
+    stack: ["ASP.NET MVC", "C#", "Python", "Django", "JavaScript", "MongoDB", "Redis"],
+    foot: "Let's build something great together.",
+    lead: "I build secure, full-stack web applications — and I care as much about what's under the hood as what the user sees.",
+    body: "Motivated BSc (Hons) Computer Systems Engineering student with hands-on experience designing and building full-stack web applications using ASP.NET MVC (C#), Django and Python, and modern database technologies. Comfortable across the full software development lifecycle, with a strong focus on object-oriented design, MVC architecture and application security best practice.",
+    facts: [["Program", "BSc (Hons) Computer Systems Engineering"], ["Institution", "ISMT College, Kathmandu"], ["Focus", "OOP · MVC · App Security"], ["Core stack", "ASP.NET MVC · Django · Python"], ["Location", "Bhaktapur, Nepal"]],
+    ptitle: "Selected projects",
+    projects: [
+      { t: "Elevate Workforce Solutions", tags: ["ASP.NET MVC", "C#"], url: GH + "Library-Management-Bookstore-System.git",
+        pts: ["Built with ASP.NET MVC (C#) following strict OOP principles and MVC architecture.", "Authentication for job seekers and companies — register, login, logout.", "CRUD job listings with pagination and a company dashboard for application tracking.", "Documented with UML class diagrams."] },
+      { t: "AI-Solutions", tags: ["Python", "Django", "MongoDB"], url: GH + "AI-Solutions-Company-Website-Admin-Portal.git",
+        pts: ["Django / MongoDB site with a CMS, ratings, articles, event gallery, and a validated enquiry form.", "Password-protected admin panel with CRUD content management and enquiry analytics.", "Security: bcrypt hashing, CSRF protection, XSS escaping, NoSQL-injection prevention — GDPR-compliant."] },
+      { t: "SecureTalk", tags: ["Django", "Redis", "JWT"], url: GH + "securetalk.git",
+        pts: ["Real-time chat via Django Channels + Redis WebSockets.", "Dual-layer password strength scoring with Cloudflare Turnstile CAPTCHA.", "bcrypt hashing with password-history checks, MFA via TOTP and email OTP.", "Progressive lockout, timing-attack mitigation, CSP/HSTS headers, and audit logging."] }
+    ],
+    stitle: "Skills & practices",
+    skills: [["Languages & Frameworks", ["ASP.NET MVC (C#)", "Python", "Django", "JavaScript", "HTML5", "CSS3"]], ["Data & Infrastructure", ["MongoDB", "SQL databases", "Redis", "Git & version control"]], ["Security practice", ["bcrypt hashing", "CSRF / XSS defense", "JWT & MFA", "CSP / HSTS headers"]]]
+  },
+  cyber: {
+    title: "Sudarshan Giri — Cybersecurity",
+    hello: "", h1: "Security-minded Developer",
+    sub: "I design authentication, session and data protection into applications from the first commit — not as a patch at the end.",
+    stack: ["MFA / TOTP", "OWASP Top 10", "bcrypt", "CSP / HSTS", "Audit logging"],
+    foot: "Let's build something secure together.",
+    lead: "Most breaches start with a small mistake in login, input handling or configuration. I build to close those first.",
+    body: "My security experience comes from building applications that defend themselves: layered authentication, input validation, injection prevention, hardened HTTP headers and audit trails. I am growing this into dedicated security work such as testing, labs and threat modelling.",
+    facts: [["Area", "Application security"], ["Strongest at", "Authentication & sessions"], ["Threats covered", "XSS · CSRF · NoSQL injection · timing attacks"], ["Languages", "Python · C# · JavaScript"], ["Location", "Bhaktapur, Nepal"]],
+    ptitle: "Security projects",
+    projects: [
+      { t: "SecureTalk", tags: ["Django", "Redis", "WebSockets"], url: GH + "securetalk.git",
+        pts: ["MFA with TOTP and email OTP, plus Cloudflare Turnstile CAPTCHA.", "bcrypt hashing, password-history checks and dual-layer strength scoring.", "Progressive account lockout and timing-attack mitigation.", "CSP and HSTS headers with audit logging of security events."] },
+      { t: "AI-Solutions hardening", tags: ["Django", "MongoDB"], url: GH + "AI-Solutions-Company-Website-Admin-Portal.git",
+        pts: ["CSRF protection and output escaping against XSS.", "NoSQL-injection prevention on every query path.", "bcrypt-hashed admin credentials behind a protected panel.", "Built to GDPR requirements."] },
+      { t: "Add a lab, CTF or write-up", tags: ["EDIT ME"], url: "#",
+        pts: ["Replace this with a vulnerability assessment, CTF write-up or home-lab project.", "Say what you tested, which tools you used and what you found."] }
+    ],
+    stitle: "Security skills",
+    skills: [["Application security", ["XSS and CSRF defense", "NoSQL injection prevention", "Input validation", "Secure headers (CSP, HSTS)"]], ["Identity & cryptography", ["bcrypt password hashing", "JWT sessions", "TOTP and email-OTP MFA", "Password policy design"]], ["Detection & response", ["Audit logging", "Progressive lockout", "Timing-attack mitigation", "Rate limiting with Redis"]]]
+  },
+  data: {
+    title: "Sudarshan Giri — Data Engineering",
+    hello: "Hello, I'm Sudarshan,", h1: "Aspiring Data Engineer",
+    sub: "I enjoy the plumbing of data: modelling it, moving it between stores and making it reliable enough to analyse.",
+    flow: [["Sources", "SQL · MongoDB"], ["Transform", "Python"], ["Serve", "Django · Redis"]],
+    foot: "Let's turn raw data into something useful.",
+    lead: "Good analysis starts with data that is clean, well modelled and where it should be.",
+    body: "Through full-stack projects I have worked with relational and document databases, caching with Redis and enquiry analytics dashboards. I am extending that foundation toward pipelines, warehousing and orchestration.",
+    facts: [["Area", "Data engineering"], ["Languages", "Python · SQL"], ["Stores", "MongoDB · SQL · Redis"], ["Learning", "ETL · warehousing · orchestration"], ["Location", "Bhaktapur, Nepal"]],
+    ptitle: "Data projects",
+    projects: [
+      { t: "AI-Solutions analytics", tags: ["Python", "MongoDB", "Django"], url: GH + "AI-Solutions-Company-Website-Admin-Portal.git",
+        pts: ["MongoDB document model for articles, ratings, events and enquiries.", "Admin dashboard with enquiry analytics.", "Validated, sanitised input before it reaches storage."] },
+      { t: "Batch ETL pipeline", tags: ["EDIT ME", "Python", "SQL"], url: "#",
+        pts: ["Replace with your pipeline: source, transform, load target.", "Mention volume, schedule and how you handle failures."] },
+      { t: "Data model or warehouse", tags: ["EDIT ME", "SQL"], url: "#",
+        pts: ["Replace with a schema design, star model or dashboard project.", "Show the question the data answers."] }
+    ],
+    stitle: "Data skills",
+    skills: [["Languages", ["Python", "SQL", "JavaScript"]], ["Storage", ["MongoDB", "SQL databases", "Redis caching", "Schema design"]], ["Learning next", ["Airflow", "Spark", "dbt"]]]
+  }
+};
+
+/* ===== tech icons: brand logos from the Devicon CDN, concept glyphs drawn inline ===== */
+const DV = "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/";
+const LOGO = [[/asp\.net/i, "dotnetcore/dotnetcore-original"], [/^c#$/i, "csharp/csharp-original"], [/python/i, "python/python-original"], [/django/i, "django/django-plain"], [/javascript/i, "javascript/javascript-original"], [/mongodb/i, "mongodb/mongodb-original"], [/redis/i, "redis/redis-original"], [/\bgit\b/i, "git/git-original"], [/html5/i, "html5/html5-original"], [/css3/i, "css3/css3-original"], [/airflow/i, "apacheairflow/apacheairflow-original"], [/spark/i, "apachespark/apachespark-original"], [/dbt/i, "dbt/dbt-original"]];
+const GLYPH = {
+  bug: "M9 9a3 3 0 0 1 6 0v7a3 3 0 0 1-6 0zM3 13h4m10 0h4M4 7l3 2m13-2-3 2M4 20l3-2m13 2-3-2",
+  lock: "M6 11h12v9H6zM8.5 11V8a3.5 3.5 0 0 1 7 0v3",
+  key: "M11 12 20 3m-3 3 3 3M8 11a4 4 0 1 0 0 8 4 4 0 0 0 0-8z",
+  shield: "M12 3 5 6v5.5c0 4.4 3 7.9 7 9.5 4-1.6 7-5.1 7-9.5V6z",
+  file: "M6 3h9l4 4v14H6zM9 12h7M9 16h7",
+  clock: "M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM12 8v4l3 2",
+  check: "m5 12 5 5 9-10",
+  bolt: "M13 3 5 14h6l-1 7 8-11h-6z",
+  db: "M5 5.5c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3zM5 5.5v13c0 1.7 3.1 3 7 3s7-1.3 7-3v-13M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3",
+  code: "m8 7-5 5 5 5M16 7l5 5-5 5"
+};
+const CONCEPT = [[/injection|xss|csrf|owasp/i, "bug"], [/bcrypt|hash|password|lockout/i, "lock"], [/jwt|mfa|totp|otp|session/i, "key"], [/csp|hsts|header|turnstile/i, "shield"], [/audit|logging/i, "file"], [/timing/i, "clock"], [/validation/i, "check"], [/websocket|rate/i, "bolt"], [/sql|schema|database|stor/i, "db"]];
+const ti = label => {
+  const l = LOGO.find(x => x[0].test(label));
+  if (l) return `<span class="tic" aria-hidden="true"><img src="${DV}${l[1]}.svg" alt="" width="18" height="18" loading="lazy" onerror="var p=this.parentNode;this.remove();p.hidden=true"></span>`;
+  const c = CONCEPT.find(x => x[0].test(label));
+  return `<span class="tic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="${GLYPH[c ? c[1] : "code"]}"/></svg></span>`;
+};
+
+/* helpers */
+const ic = n => `<svg class="si" width="24" height="24"><use href="#i-${n}"/></svg>`;
+const head = (i, t) => `<div class="head rv"><span class="hi">${ic(i)}</span><h2>${t}</h2></div>`;
+const bd = a => a.map(s => `<span class="badge">${ti(s)}${s}</span>`).join("");
+const tg = p => `<div class="tags">${p.tags.map(t => `<span class="tag${t === "EDIT ME" ? " draft" : ""}">${t === "EDIT ME" ? "" : ti(t)}${t}</span>`).join("")}</div>`;
+const ul = p => `<ul class="pts">${p.pts.map(x => `<li>${x}</li>`).join("")}</ul>`;
+const rp = p => p.url === "#" ? "" : `<a class="repo" href="${p.url}" target="_blank" rel="noopener">View repository<span class="sr" hidden> for ${p.t}</span></a>`;
+const av = () => `<div class="av"><div class="av-c"><b>SG</b><img src="profile.jpeg" alt="Sudarshan Giri" loading="eager" onerror="this.style.display='none'"></div></div>`;
+const facts = d => d.facts.map(f => `<div><span>${f[0]}</span><span>${f[1]}</span></div>`).join("");
+const cta = `<div class="cta"><a class="btn" href="${RESUME}" target="_blank" rel="noopener"><svg class="si"><use href="#i-dl"/></svg>Download resume</a><a class="ghost" href="#work">View projects</a></div>`;
+const edu = `<section id="edu"><div class="wrap">${head("cap", "Where I'm studying")}<div class="card edu rv"><div><h3>BSc (Hons) Computer Systems Engineering (IT)</h3><p>ISMT College, Kathmandu, Nepal</p></div><b>12/2023 — Present</b></div></div></section>`;
+const projs = d => d.projects.filter(p => SHOW_DRAFTS || !p.tags.includes("EDIT ME"));
+
+const R = {
+  software: d => `
+  <section class="hero"><div class="wrap hero-grid"><div>
+    <p class="hello">${d.hello}</p><h1>${d.h1}</h1><p class="sub">${d.sub}</p>
+    <div class="badges">${bd(d.stack)}</div>${cta}</div>${av()}</div></section>
+  <section id="about"><div class="wrap">${head("user", "A bit about me")}
+    <div class="about"><div class="rv"><p class="lead">${d.lead}</p><p>${d.body}</p></div><div class="card facts rv">${facts(d)}</div></div></div></section>
+  <section id="work"><div class="wrap">${head("folder", d.ptitle)}
+    <div class="grid3">${projs(d).map(p => `<article class="card proj rv"><h3>${p.t}</h3>${tg(p)}${ul(p)}${rp(p)}</article>`).join("")}</div></div></section>
+  <section id="skills"><div class="wrap">${head("tools", d.stitle)}
+    <div class="grid3">${d.skills.map(s => `<div class="card skill rv"><h4>${s[0]}</h4><div>${s[1].map(i => `<span>${ti(i)}${i}</span>`).join("")}</div></div>`).join("")}</div></div></section>${edu}`,
+
+  cyber: d => `
+  <section class="hero"><div class="wrap hero-grid">
+    <div class="term"><div class="tbar"><i></i><i></i><i></i><span>sudarshan@portfolio:~/security</span></div>
+      <div class="tbody"><p><b>$</b>whoami</p><h1>${d.h1}</h1>
+      <p><b>$</b>cat summary.txt</p><p class="sub">${d.sub}</p>
+      <p><b>$</b>ls skills/</p><div class="badges">${bd(d.stack)}</div>${cta}</div></div>${av()}</div></section>
+  <section id="about"><div class="wrap">${head("user", "A bit about me")}
+    <div class="about rv"><p class="lead">${d.lead}</p><p>${d.body}</p>
+    <div class="spec">${d.facts.map(f => `<div><small>${f[0]}</small><b>${f[1]}</b></div>`).join("")}</div></div></div></section>
+  <section id="work"><div class="wrap">${head("folder", d.ptitle)}
+    ${projs(d).map(p => `<article class="row rv"><div><h3>${p.t}</h3>${tg(p)}</div><div>${ul(p)}${rp(p)}</div></article>`).join("")}</div></section>
+  <section id="skills"><div class="wrap">${head("tools", d.stitle)}
+    ${d.skills.map(s => `<div class="mrow rv"><h4>${s[0]}</h4><div>${s[1].map(i => `<span>${ti(i)}${i}</span>`).join("")}</div></div>`).join("")}</div></section>${edu}`,
+
+  data: d => `
+  <section class="hero"><div class="wrap hero-grid"><div>
+    <p class="hello">${d.hello}</p><h1>${d.h1}</h1><p class="sub">${d.sub}</p>${cta}</div>
+    <div class="card flow">${av()}${d.flow.map((f, i) => `<div class="stage"><span class="dot">${ic(["data", "flow", "software"][i]).replace('width="24" height="24"', 'width="17" height="17"')}</span><div><b>${f[0]}</b><small>${f[1]}</small></div></div>`).join("")}</div></div></section>
+  <section id="about"><div class="wrap">${head("user", "A bit about me")}
+    <div class="about"><div class="card facts rv">${facts(d)}</div><div class="rv"><p class="lead">${d.lead}</p><p>${d.body}</p></div></div></div></section>
+  <section id="work"><div class="wrap">${head("folder", d.ptitle)}
+    <div class="lineage">${projs(d).map(p => `<article class="card node rv"><h3>${p.t}</h3>${tg(p)}${ul(p)}${rp(p)}</article>`).join("")}</div></div></section>
+  <section id="skills"><div class="wrap">${head("tools", d.stitle)}
+    <div class="grid3">${d.skills.map(s => `<div class="tbl rv"><h4>${s[0]}</h4>${s[1].map(i => `<span>${ti(i)}${i}</span>`).join("")}</div>`).join("")}</div></div></section>${edu}`
+};
+
+/* reveal on scroll */
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+
+function show(k, setHash) {
+  if (!P[k]) k = START;
+  const d = P[k];
+  document.body.dataset.theme = k;
+  document.title = d.title;
+  document.getElementById("tc").content = COLORS[k];
+  document.getElementById("fh").textContent = d.foot;
+  document.querySelectorAll(".tabs a").forEach(a => a.toggleAttribute("aria-current", a.dataset.k === k) || a.removeAttribute("aria-current"));
+  document.querySelectorAll(".tabs a[aria-current]").forEach(a => a.setAttribute("aria-current", "page"));
+  const v = document.getElementById("view");
+  v.innerHTML = R[k](d);
+  v.style.animation = "none"; void v.offsetWidth; v.style.animation = "";
+  v.querySelectorAll(".rv").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+  if (setHash) history.replaceState(null, "", "#" + k);
+  window.scrollTo({ top: 0 });
+  onScroll();
+}
+
+/* tabs are real links: use LINKS for separate pages, otherwise switch in place */
+document.querySelectorAll(".tabs a").forEach(a => {
+  const k = a.dataset.k;
+  if (LINKS[k]) a.href = LINKS[k];
+  a.addEventListener("click", e => { if (LINKS[k]) return; e.preventDefault(); show(k, true); });
+  a.addEventListener("keydown", e => {
+    const keys = Object.keys(P), i = keys.indexOf(k);
+    const n = e.key === "ArrowRight" ? keys[(i + 1) % 3] : e.key === "ArrowLeft" ? keys[(i + 2) % 3] : null;
+    if (n) { e.preventDefault(); show(n, true); document.querySelector(`.tabs a[data-k="${n}"]`).focus(); }
+  });
+});
+document.querySelector(".brand").addEventListener("click", e => { e.preventDefault(); show("software", true); });
+
+/* in-page anchors */
+document.addEventListener("click", e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a || a.closest(".tabs") || a.classList.contains("brand") || a.classList.contains("skip")) return;
+  e.preventDefault();
+  const t = a.getAttribute("href") !== "#" && document.querySelector(a.getAttribute("href"));
+  t && t.scrollIntoView({ behavior: "smooth" });
+});
+document.getElementById("up").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+/* progress bar, back-to-top, active section link */
+function onScroll() {
+  const h = document.documentElement, max = h.scrollHeight - innerHeight;
+  document.getElementById("prog").style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
+  document.getElementById("up").classList.toggle("show", scrollY > 600);
+  let cur = "";
+  ["about", "work", "skills", "edu"].forEach(id => { const el = document.getElementById(id); if (el && el.getBoundingClientRect().top < 160) cur = id; });
+  document.querySelectorAll("#links a").forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + cur));
+}
+addEventListener("scroll", onScroll, { passive: true });
+addEventListener("hashchange", () => { const k = location.hash.slice(1); if (P[k]) show(k, false); });
+show(location.hash.slice(1) || START, false);
+</script>
 </body>
 </html>
